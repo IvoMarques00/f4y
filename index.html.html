@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forest4Youth – Meet Our Partners</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+
+    .profile-selection, .gallery {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+      overflow-x: auto;
+    }
+
+    .profile-selection img, .gallery img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .profile-selection img:hover, .gallery img:hover {
+      transform: scale(1.05);
+      border-color: #4CAF50;
+    }
+
+    .profile {
+      display: none;
+    }
+
+    .profile.active {
+      display: block;
+    }
+
+    .question-box {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .question {
+      background: #f4f4f4;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .answer {
+      display: none;
+      padding: 10px;
+      background: #fff;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Meet Our Partners – In the Spotlight</h2>
+  <p>Click on a profile to explore their story and insights into Forest4Youth.</p>
+
+  <div class="profile-selection">
+    <img src="partner1.jpg" alt="Partner 1" onclick="showProfile('p1')">
+    <img src="partner2.jpg" alt="Partner 2" onclick="showProfile('p2')">
+    <img src="partner3.jpg" alt="Partner 3" onclick="showProfile('p3')">
+    <img src="partner4.jpg" alt="Partner 4" onclick="showProfile('p4')">
+    <img src="partner5.jpg" alt="Partner 5" onclick="showProfile('p5')">
+    <img src="partner6.jpg" alt="Partner 6" onclick="showProfile('p6')">
+  </div>
+
+  <!-- Partner Profiles -->
+  <div id="p1" class="profile active">
+    <h3>Partner 1 – Name</h3>
+    <!-- Repeat question-box blocks as needed -->
+    <div class="question-box">
+      <div class="question" onclick="toggleAnswer(this)">Was there a moment or experience in nature that sparked your interest in forest-based therapy or mental wellbeing?</div>
+      <div class="answer">Answer text goes here.</div>
+    </div>
+    <!-- ... additional questions ... -->
+  </div>
+
+  <div id="p2" class="profile">
+    <h3>Partner 2 – Name</h3>
+    <!-- questions -->
+  </div>
+
+  <!-- Repeat profiles p3 to p6 similarly -->
+
+  <!-- Gallery – Past Interviews -->
+  <h3>Gallery – Past Interviews</h3>
+  <p>Discover more voices from across the Forest4Youth consortium.</p>
+  <div class="gallery">
+    <img src="alumni1.jpg" alt="Alumni 1" onclick="showProfile('a1')">
+    <img src="alumni2.jpg" alt="Alumni 2" onclick="showProfile('a2')">
+    <img src="alumni3.jpg" alt="Alumni 3" onclick="showProfile('a3')">
+  </div>
+
+  <!-- Alumni Profiles -->
+  <div id="a1" class="profile">
+    <h3>Alumni 1 – Name</h3>
+    <!-- questions -->
+  </div>
+  <!-- Repeat alumni a2 and a3 similarly -->
+
+  <footer>
+    &copy; 2025 Forest4Youth. All rights reserved.
+  </footer>
+
+  <script>
+    function showProfile(id) {
+      document.querySelectorAll('.profile').forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function toggleAnswer(el) {
+      const answer = el.nextElementSibling;
+      answer.style.display = answer.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
