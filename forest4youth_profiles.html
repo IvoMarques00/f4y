@@ -1,0 +1,692 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Forest4Youth – Meet Our Partners</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+    }
+
+    .profile-selection, .gallery {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 30px;
+      overflow-x: auto;
+    }
+
+    .profile-selection img, .gallery img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .profile-selection img:hover, .gallery img:hover {
+      transform: scale(1.05);
+      border-color: #4CAF50;
+    }
+
+    .profile {
+      display: none;
+    }
+
+    .profile.active {
+      display: block;
+    }
+
+    .question-box {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+
+    .question {
+      background: #f4f4f4;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .answer {
+      display: none;
+      padding: 10px;
+      background: #fff;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Meet Our Partners – In the Spotlight</h2>
+  <p>Click on a profile to explore their story and insights into Forest4Youth.</p>
+
+  <div class="profile-selection">
+    <img src="partner1.jpg" alt="Partner 1" onclick="showProfile('p1')"><img src="partner2.jpg" alt="Partner 2" onclick="showProfile('p2')"><img src="partner3.jpg" alt="Partner 3" onclick="showProfile('p3')"><img src="partner4.jpg" alt="Partner 4" onclick="showProfile('p4')"><img src="partner5.jpg" alt="Partner 5" onclick="showProfile('p5')"><img src="partner6.jpg" alt="Partner 6" onclick="showProfile('p6')">
+  </div>
+
+  <div id="p1" class="profile active"><h3>Partner 1 – Name</h3>
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Was there a moment or experience in nature that sparked your interest in forest-based therapy or mental wellbeing?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What makes this project feel timely or necessary, from your perspective?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What kind of future do you hope this project helps to build?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">How does your field bring something unique to this collaboration?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Where do you see yourself making the most impact in this project?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What do you hope to learn from others in this project—perhaps from a sector or discipline different from yours?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Are there any activities that you’re particularly excited about?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Do you see any challenges we should anticipate?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What questions do you find yourself asking as we begin this journey?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What does forest-based therapy make possible, that other approaches don’t?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Who do you believe is not yet part of this conversation but should be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">When you imagine Forest4Youth reaching its full potential, what does that look like to you? What do you hope it will be remembered for?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">If you could leave one message to the Forest4Youth followers, what would it be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+</div><div id="p2" class="profile"><h3>Partner 2 – Name</h3>
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Was there a moment or experience in nature that sparked your interest in forest-based therapy or mental wellbeing?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What makes this project feel timely or necessary, from your perspective?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What kind of future do you hope this project helps to build?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">How does your field bring something unique to this collaboration?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Where do you see yourself making the most impact in this project?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What do you hope to learn from others in this project—perhaps from a sector or discipline different from yours?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Are there any activities that you’re particularly excited about?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Do you see any challenges we should anticipate?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What questions do you find yourself asking as we begin this journey?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What does forest-based therapy make possible, that other approaches don’t?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Who do you believe is not yet part of this conversation but should be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">When you imagine Forest4Youth reaching its full potential, what does that look like to you? What do you hope it will be remembered for?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">If you could leave one message to the Forest4Youth followers, what would it be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+</div><div id="p3" class="profile"><h3>Partner 3 – Name</h3>
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Was there a moment or experience in nature that sparked your interest in forest-based therapy or mental wellbeing?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What makes this project feel timely or necessary, from your perspective?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What kind of future do you hope this project helps to build?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">How does your field bring something unique to this collaboration?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Where do you see yourself making the most impact in this project?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What do you hope to learn from others in this project—perhaps from a sector or discipline different from yours?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Are there any activities that you’re particularly excited about?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Do you see any challenges we should anticipate?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What questions do you find yourself asking as we begin this journey?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What does forest-based therapy make possible, that other approaches don’t?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Who do you believe is not yet part of this conversation but should be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">When you imagine Forest4Youth reaching its full potential, what does that look like to you? What do you hope it will be remembered for?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">If you could leave one message to the Forest4Youth followers, what would it be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+</div><div id="p4" class="profile"><h3>Partner 4 – Name</h3>
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Was there a moment or experience in nature that sparked your interest in forest-based therapy or mental wellbeing?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What makes this project feel timely or necessary, from your perspective?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What kind of future do you hope this project helps to build?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">How does your field bring something unique to this collaboration?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Where do you see yourself making the most impact in this project?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What do you hope to learn from others in this project—perhaps from a sector or discipline different from yours?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Are there any activities that you’re particularly excited about?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Do you see any challenges we should anticipate?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What questions do you find yourself asking as we begin this journey?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What does forest-based therapy make possible, that other approaches don’t?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Who do you believe is not yet part of this conversation but should be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">When you imagine Forest4Youth reaching its full potential, what does that look like to you? What do you hope it will be remembered for?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">If you could leave one message to the Forest4Youth followers, what would it be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+</div><div id="p5" class="profile"><h3>Partner 5 – Name</h3>
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Was there a moment or experience in nature that sparked your interest in forest-based therapy or mental wellbeing?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What makes this project feel timely or necessary, from your perspective?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What kind of future do you hope this project helps to build?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">How does your field bring something unique to this collaboration?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Where do you see yourself making the most impact in this project?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What do you hope to learn from others in this project—perhaps from a sector or discipline different from yours?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Are there any activities that you’re particularly excited about?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Do you see any challenges we should anticipate?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What questions do you find yourself asking as we begin this journey?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What does forest-based therapy make possible, that other approaches don’t?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Who do you believe is not yet part of this conversation but should be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">When you imagine Forest4Youth reaching its full potential, what does that look like to you? What do you hope it will be remembered for?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">If you could leave one message to the Forest4Youth followers, what would it be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+</div><div id="p6" class="profile"><h3>Partner 6 – Name</h3>
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Was there a moment or experience in nature that sparked your interest in forest-based therapy or mental wellbeing?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What makes this project feel timely or necessary, from your perspective?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What kind of future do you hope this project helps to build?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">How does your field bring something unique to this collaboration?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Where do you see yourself making the most impact in this project?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What do you hope to learn from others in this project—perhaps from a sector or discipline different from yours?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Are there any activities that you’re particularly excited about?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Do you see any challenges we should anticipate?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What questions do you find yourself asking as we begin this journey?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What does forest-based therapy make possible, that other approaches don’t?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Who do you believe is not yet part of this conversation but should be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">When you imagine Forest4Youth reaching its full potential, what does that look like to you? What do you hope it will be remembered for?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">If you could leave one message to the Forest4Youth followers, what would it be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+</div>
+
+  <!-- Additional Profiles Gallery -->
+  <h3>Gallery – Past Interviews</h3>
+  <p>Discover more voices from across the Forest4Youth consortium.</p>
+  <div class="gallery">
+    <img src="alumni1.jpg" alt="Alumni 1" onclick="showProfile('a1')"><img src="alumni2.jpg" alt="Alumni 2" onclick="showProfile('a2')"><img src="alumni3.jpg" alt="Alumni 3" onclick="showProfile('a3')">
+  </div>
+
+  <div id="a1" class="profile"><h3>Alumni 1 – Name</h3>
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Was there a moment or experience in nature that sparked your interest in forest-based therapy or mental wellbeing?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What makes this project feel timely or necessary, from your perspective?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What kind of future do you hope this project helps to build?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">How does your field bring something unique to this collaboration?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Where do you see yourself making the most impact in this project?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What do you hope to learn from others in this project—perhaps from a sector or discipline different from yours?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Are there any activities that you’re particularly excited about?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Do you see any challenges we should anticipate?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What questions do you find yourself asking as we begin this journey?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What does forest-based therapy make possible, that other approaches don’t?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Who do you believe is not yet part of this conversation but should be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">When you imagine Forest4Youth reaching its full potential, what does that look like to you? What do you hope it will be remembered for?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">If you could leave one message to the Forest4Youth followers, what would it be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+</div><div id="a2" class="profile"><h3>Alumni 2 – Name</h3>
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Was there a moment or experience in nature that sparked your interest in forest-based therapy or mental wellbeing?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What makes this project feel timely or necessary, from your perspective?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What kind of future do you hope this project helps to build?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">How does your field bring something unique to this collaboration?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Where do you see yourself making the most impact in this project?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What do you hope to learn from others in this project—perhaps from a sector or discipline different from yours?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Are there any activities that you’re particularly excited about?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Do you see any challenges we should anticipate?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What questions do you find yourself asking as we begin this journey?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What does forest-based therapy make possible, that other approaches don’t?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Who do you believe is not yet part of this conversation but should be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">When you imagine Forest4Youth reaching its full potential, what does that look like to you? What do you hope it will be remembered for?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">If you could leave one message to the Forest4Youth followers, what would it be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+</div><div id="a3" class="profile"><h3>Alumni 3 – Name</h3>
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Was there a moment or experience in nature that sparked your interest in forest-based therapy or mental wellbeing?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What makes this project feel timely or necessary, from your perspective?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What kind of future do you hope this project helps to build?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">How does your field bring something unique to this collaboration?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Where do you see yourself making the most impact in this project?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What do you hope to learn from others in this project—perhaps from a sector or discipline different from yours?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Are there any activities that you’re particularly excited about?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Do you see any challenges we should anticipate?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What questions do you find yourself asking as we begin this journey?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">What does forest-based therapy make possible, that other approaches don’t?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">Who do you believe is not yet part of this conversation but should be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">When you imagine Forest4Youth reaching its full potential, what does that look like to you? What do you hope it will be remembered for?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+
+<div class="question-box">
+  <div class="question" onclick="toggleAnswer(this)">If you could leave one message to the Forest4Youth followers, what would it be?</div>
+  <div class="answer">Answer text goes here.</div>
+</div>
+</div>
+
+  <footer>
+    &copy; 2025 Forest4Youth. All rights reserved.
+  </footer>
+
+  <script>
+    function showProfile(id) {
+      const profiles = document.querySelectorAll('.profile');
+      profiles.forEach(p => p.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function toggleAnswer(el) {
+      const answer = el.nextElementSibling;
+      answer.style.display = answer.style.display === "block" ? "none" : "block";
+    }
+  </script>
+
+</body>
+</html>
